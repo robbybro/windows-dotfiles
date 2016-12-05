@@ -47,11 +47,11 @@ POWERLINE_BASH_SELECT=1
 . ~/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
 source ~/.dotfiles/tmuxinator.bash
 if [[ -z "$TMUX" && $- == *i* ]] ;then
-    ID="`tmux ls | grep -vm1 attached | cut -d: -f1`" # get the id of a deattached session
+    ID="`tmux-next ls | grep -vm1 attached | cut -d: -f1`" # get the id of a deattached session
     if [[ -z "$ID" ]] ;then # if not available create a new one
-        tmux new-session
+        tmux-next new-session
     else
-        tmux attach-session -d -t "$ID" # if available attach to it
+        tmux-next attach-session -d -t "$ID" # if available attach to it
     fi
 fi
 
