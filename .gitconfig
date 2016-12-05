@@ -1,0 +1,34 @@
+[user]
+	name = Robby Brosman
+	email = robbybro@extrahop.com
+[color]
+    ui = auto
+[alias]
+    co = checkout
+    c = commit
+    ca = commit --amend
+    s = status -sb
+    l = log
+    lv = log --pretty=fuller
+    ld = log --full-diff
+    d = diff
+    dc = diff --cached
+    br = branch
+    a = add
+    aa = add -A .
+    ad = ls-files --deleted | xargs git rm
+    ff = merge --ff-only
+    hist = log --pretty=format:\"%C(yellow)%h %C(blue)%ad %C(red)%d %C(reset)%s%d %C(green)[%an]\" --decorate --graph --date=short
+    type = cat-file -t
+    dump = cat-file -p
+    week = log --since=1.weeks --author=robbybro
+[core]
+    autocrlf = false
+    eol = lf
+    pager = bash -lc 'diff-highlight | strip_diff_leading_symbols | less -F -R -X -x1,5' -
+[push]
+	default = upstream
+[branch]
+	autosetuprebase = always
+[diff]
+	renames = copies
