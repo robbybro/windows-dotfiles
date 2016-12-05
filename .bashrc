@@ -49,7 +49,7 @@ source ~/.dotfiles/tmuxinator.bash
 if [[ -z "$TMUX" && $- == *i* ]] ;then
     ID="`tmux-next ls | grep -vm1 attached | cut -d: -f1`" # get the id of a deattached session
     if [[ -z "$ID" ]] ;then # if not available create a new one
-        tmux-next new-session
+        tmux-next -2 new-session
     else
         tmux-next attach-session -d -t "$ID" # if available attach to it
     fi
