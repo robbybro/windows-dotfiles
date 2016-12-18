@@ -24,3 +24,8 @@ Don't edit any of your dotfiles with a windows editor. Do it all in the Linux sh
 2. [Run Zsh instead of bash](http://www.howtogeek.com/258518/how-to-use-zsh-or-another-shell-in-windows-10/)
 3. [Set up Bash for Windows inside of VS Code](https://code.visualstudio.com/docs/editor/integrated-terminal)\
 4. [Bash for Windows FAQ](https://msdn.microsoft.com/en-us/commandline/wsl/faq)
+5. [Get Mongodb Running](https://github.com/Microsoft/BashOnWindows/issues/796#issuecomment-238048520)
+6. [Install Nodejs on Bash for Windows](https://aigeec.com/installing-node-js-on-windows-10-bash/)
+7. [Get Webpack running on Bash for Windows](https://github.com/Microsoft/BashOnWindows/issues/468)
+
+## Also note there are tons of problems getting webpack and webpack watch to work. Looking into [virtualization and building via docker](https://medium.com/@andyccs/webpack-and-docker-for-development-and-deployment-ae0e73243db4#.7iqk98om2)
